@@ -114,10 +114,9 @@ public class ContactController {
 			attributes.addFlashAttribute("org.springframework.validation.BindingResult.contactDto",result);
 			attributes.addFlashAttribute("contactDto",contactDto);
 			if(!RegEx.checkValidTelNumber(contactDto.getMobPhoneNumber()))
-				attributes.addFlashAttribute("error1","errText.registration.errTelNumber");
-//				model.addAttribute("edit1", true);
+				attributes.addFlashAttribute("error1","Incorrect telephone number format!");
 			if(!RegEx.checkValidHomeNumber(contactDto.getHomePhoneNumber()))
-				attributes.addFlashAttribute("error2","errText.registration.errHomeNumber");
+				attributes.addFlashAttribute("error2","Incorrect home phone number format!");
 //				model.addAttribute("edit2", true);
 			return "redirect:/"+contactId;
 		} else{
