@@ -1,4 +1,4 @@
-package com.test.javaproject.mvc.service.impl;
+package com.test.javaproject.mvc.service;
 
 import com.test.javaproject.mvc.dto.ContactDto;
 import com.test.javaproject.mvc.service.ContactService;

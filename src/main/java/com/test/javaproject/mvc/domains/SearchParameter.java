@@ -9,6 +9,11 @@ public class SearchParameter {
     private String searchBy;
     private String parameter;
 
+    public SearchParameter(String searchBy, String parameter) {
+        this.searchBy = searchBy;
+        this.parameter = parameter;
+    }
+
     public SearchParameter() {
     }
 
